@@ -43,8 +43,6 @@ export default {
   async asyncData({$axios, params}) {
     const user = await $axios.$get('https://jsonplaceholder.typicode.com/users/' + params.id)
 
-    console.log(user)
-
     return {user}
   }
 }
